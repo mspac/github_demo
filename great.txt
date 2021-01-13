@@ -1,2 +1,134 @@
-this text value
-new text valu
+central repogitory nothing but -bare repogitory	
+
+touch <file Name.typeFormat>   --> create file 
+
+git status
+
+git add 
+
+git add <file Name.typeFormat> 
+
+git add <sample.py> && git commit -m 'added sample.py'
+
+copy : git colone <form_dat> <to store_here>
+
+       
+	                11-01-20121
+
+Git holds the history of all kind of operations which you have done in each updated versions, 
+it also tracks the files, holds commit history, and allows you to make changes, undo changes you have made before.
+
+Git allows one or more people to work as a team on the same project and we call this process as a collaboration.
+
+
+ 1) working directory -> staging area -> local repository  -->remote repository| origin (database/COLUDE/other)
+ 
+			12-01-2021
+			
+DEFAULT BRANCH NAME: main/master  --for a directory    
+			
+			
+#to know current path 
+pwd 
+
+#to display list of files/folders in current directory
+ls 
+			
+#clear the screen 
+clear 
+
+#move inside | move outside
+cd <directory>  | cd ..
+
+
+#check which version of git
+git --version     
+
+	
+#configure GITHUB account :git requires 2 information such as usename and email id.
+git config --global user.name <'madhava'>
+git config --global user.email <'madhava7888@gmail.com'>
+
+#all configurations will display
+git config --list 
+
+
+#check any configration avoilable or NOT
+git config --global  --list   
+
+  #see current user of USENAME|Email:
+	git config 	user.name
+	git config  user.email
+  
+
+#git configer | edit the username or email id  --PRESES -> i once edit the deatils ESC the : + wq then presee ENTER 
+git config --global --edit  
+
+#still now how many configration happen in your system so give the list
+git config --list
+
+
+#create directory 
+mkdir <directoryName>
+
+#create a file
+touch <fileName.format_type>                               --> single file will create
+touch <fileName.format_type>  <fileName.format_type>       --> multiple file will create at time 
+
+#echo  ---like print('hello world')
+eacho  'hello world' >> save_into.txt                       --> 'hello world' as output and save_into file 
+
+#create the if not there else:edit/write inside a file                     --PRESES -> i once edit the deatils ESC the : + wq then presee ENTER 
+ vi <fileName.format_type>
+
+#to check what data is there inside file : display that data 
+cat <fileName.format_type>  
+
+
+#to know the status of the files or something : 
+git status  
+
+#untrack(working directory) to track(staging area)
+git add .  
+git add <fileName> ,<fileName>
+git add <fileName>
+
+#track(staging area) to untrack(working directory)
+
+
+
+      -->TO SAVE THE CHANGES TO THE LOCAL REPOSITORY  --telling to git which changes files you want to save 
+#track(staging area) to Local|GIT repogitory(ready to share to COLUDE/other developers  
+
+git commit -m <'comment'>
+  ->Git Repository also contains commit history and special configurations in it.
+  
+   Note: to edit comment message  : - git commit --amend          -> recent commit message we can change
+ 
+#to display commit ids :
+git log 
+
+                     ekadanuchi             edi(vatilo)
+#git pull <remote | where>  <master/main | which>  --- updating the local repository from a remote repogitory.
+                                             --any new files/change in remote repository those change we will download into local repository
+   				
+note:This is the best practice to do pull operation before doing push operation because, if you are working with the team then you had multiple developers or contributors who are putting their code in the same repository then you might get out of synchronization.
+				   
+				   #local master to the remote master branch
+				   ekadaki      denini(file from local repository)
+#git push <remote | where>  <master/main>
+
+#to copy remote repository into the local system this process is called 'cloning' 
+git clone 'URL'           -> to past use :  SHIFT + INSERT                            --- remote name (place)/path == origin 
+
+
+#rm   --delete utracked files
+$ rm -rf <repositoryName>    --> to delete git repository
+# git rm -rf  <fileName.format_type>       -->recorceive & force
+
+
+# .git        --> to see what are the files are there in git repository
+
+# ls -al      --> all folders and files and .git repository also display 
+
+#git ls-files   -->This command gives me the list of all the files that Git is tracking in the current repository.
