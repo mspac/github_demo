@@ -143,7 +143,10 @@ $ rm -rf <repositoryName>    --> to delete git repository
 
 
 #To back out the changes from the staging area or unstaging area, you can use the command
-git reset HEAD <fileName.filetype> 
+git reset HEAD <fileName.filetype>                                               --1
+     
+    # then if you don't want new changes in data back to previous of data 
+     git checkout -- <fileName.filetype>
 
 
 
