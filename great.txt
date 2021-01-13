@@ -131,4 +131,22 @@ $ rm -rf <repositoryName>    --> to delete git repository
 
 # ls -al      --> all folders and files and .git repository also display 
 
-#git ls-files   -->This command gives me the list of all the files that Git is tracking in the current repository.
+#git ls-files   -->This command gives me the list of all the files that Git is 'tracking' in the current repository.
+
+#add n commit with single command
+  git commit -am 'add a file to staging area and m for my comment message'
+
+#IMPORTENT POINT
+  once you modified any files(untrack | tracked-stageing area) which are not committed yet, so we have to add that file to the staging area.  git add . 
+
+#cd ../../..   --> 3 levels back main directory 
+
+
+#To back out the changes from the staging area or unstaging area, you can use the command
+git reset HEAD <fileName.filetype>
+
+
+
+
+
+
