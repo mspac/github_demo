@@ -153,3 +153,39 @@ git reset HEAD <fileName.filetype>                                              
 
 
 
+                18-01-2021
+
+
+
+git --version                         -> to check version of the git
+git init                              -> One branch(repository|floder|directory) will create and the default branch name is MASTER/MAIN --TO initalize the git repository
+ls                                    -> display the list of files,folder in current repository
+ls -a                                 -> display the list of files,folder in current repository and hidden files also display 
+clear                                 -> clear the screen/board/command screen
+git status                            -> to know the status of the file/files --in which fage there a file - workarea files(REDCOLOR) OR staging area fiels(GREEN COLOR) 
+
+git add file1                         -> to move workspace area to staging area ----because there only files will track of each changes in afile.
+git add file1 file2                         <multiple files>
+git .                                       <all files >
+
+git commit -m <sample msg>            -> staging area(all files) to local repository(all files)  --- Note: ALL FILES WILL MOVE at once (single file WE CAN't move)
+
+git log                               -> logs will display
+git log -n                            -> number logs do wana display
+
+git clone <url>                       -> copy/download remote/central reposity into local system -Note: if you do multple time multple copy of repository will create
+
+touch  <fileName>                     -> to create empty file   -linux commond to create a file
+touch  <fileName1> <fileName2>        -> <multiple files>
+
+
+git config --global  user.name 'mspac'
+git config --global  user.email 'work.mspace@gmail.com'
+git config --list                     -> display the  all configuration files  
+
+vi <fileName.format_type>             ->create the if not there else:edit/write inside a file --PRESES -> i once edit the deatils ESC the : + wq then presee ENTER 
+ 
+git push 
+git push <url> master                 -> to push repository locla to  into central reposity  ,branch name is master (default name)WHICH  <url> --where to send(TO ADDRESS)TO
+
+
